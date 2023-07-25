@@ -10,13 +10,13 @@ describe('number utils', () => {
       expect(number.roundToDecimalPlace(123.456, 1)).toEqual(123.5);
     });
 
-    test('should return a string when asString is true', () => {
+    it('should return a string when asString is true', () => {
       const result = number.roundToDecimalPlace(123.456, 2, true);
       expect(typeof result).toBe('string');
       expect(result).toBe('123.46');
     });
 
-    test('should return a number when asString is false', () => {
+    it('should return a number when asString is false', () => {
       const result = number.roundToDecimalPlace(123.456, 2, false);
       expect(typeof result).toBe('number');
       expect(result).toBe(123.46);
@@ -34,15 +34,15 @@ describe('number utils', () => {
   });
 
   describe('commaize', () => {
-    test('should properly commaize an integer number', () => {
+    it('should properly commaize an integer number', () => {
       expect(number.commaize(1234567)).toBe('1,234,567');
     });
   
-    test('should properly commaize a number without decimal part', () => {
+    it('should properly commaize a number without decimal part', () => {
       expect(number.commaize('1234567')).toBe('1,234,567');
     });
   
-    test('should properly commaize a number with decimal part', () => {
+    it('should properly commaize a number with decimal part', () => {
       expect(number.commaize('1234567.89')).toBe('1,234,567.89');
     });
   });
