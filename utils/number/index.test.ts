@@ -37,11 +37,11 @@ describe('number utils', () => {
     it('should properly commaize an integer number', () => {
       expect(number.commaize(1234567)).toBe('1,234,567');
     });
-  
+
     it('should properly commaize a number without decimal part', () => {
       expect(number.commaize('1234567')).toBe('1,234,567');
     });
-  
+
     it('should properly commaize a number with decimal part', () => {
       expect(number.commaize('1234567.89')).toBe('1,234,567.89');
     });
