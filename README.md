@@ -1,4 +1,4 @@
-# fe-common-utils
+# ts-common-utils
 
 This project includes several utility functions that can be useful for JavaScript and TypeScript development.
 

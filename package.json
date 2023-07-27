@@ -1,5 +1,5 @@
 {
-  "name": "fe-common-utils",
+  "name": "ts-common-utils",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://haena-j@github.com/haena-j/fe-common-utils.git"
+    "url": "git+https://haena-j@github.com/haena-j/ts-common-utils.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/haena-j/fe-common-utils/issues"
+    "url": "https://github.com/haena-j/ts-common-utils/issues"
   },
-  "homepage": "https://github.com/haena-j/fe-common-utils#readme",
+  "homepage": "https://github.com/haena-j/ts-common-utils#readme",
   "devDependencies": {
     "@types/jest": "^29.5.3",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
