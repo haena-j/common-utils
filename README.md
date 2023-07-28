@@ -21,6 +21,13 @@ This project includes several utility functions that can be useful for JavaScrip
 3. **commaize(value)** - Adds a comma every three digits in a number or string.
 4. **unCommaize(value)** - Removes all commas from a string.
 
+### Random Utility Functions
+
+1. **getRandomID()** - Generates a random, unique ID using a combination of `Math.random()` and `Date.now()`.
+2. **getRandomKey(length)** - Generates a random alphanumeric string of a specified length. Defaults to a length of 10 if no length is provided.
+3. **getRandomCharactor()** - Generates a random character from a set of alphanumeric characters.
+4. **getRandomBoolean()** - Generates a random boolean value (true or false).
+
 ## Installation
 
 In the project directory, run:
