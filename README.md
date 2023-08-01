@@ -28,6 +28,19 @@ This project includes several utility functions that can be useful for JavaScrip
 3. **getRandomCharactor()** - Generates a random character from a set of alphanumeric characters.
 4. **getRandomBoolean()** - Generates a random boolean value (true or false).
 
+### File Utility Functions
+
+1. **getExtension(filename)** - Extract the extension from a file name.
+
+## Text Utility Functions
+
+1. **toTitleCase(str)** - Converts a string to title case.
+2. **truncate(str, length)** - Truncates a string to a specific length and appends an ellipsis ('...') if the original string is longer.
+3. **reverseText(str)** - Reverses the order of characters in a string.
+4. **removeAllSpaces(str)** - Removes all spaces from a string.
+5. **decodeHTMLEntities(str)** - Converts HTML entities to their corresponding characters in a string. Returns an empty string if the input is `null` or `undefined`.
+6. **encodeHTMLEntities(originalText)** - Converts special characters (&, <, >, ", ') to their corresponding HTML entities in a string. Returns an empty string if the input is `null` or `undefined`.
+
 ## Installation
 
 In the project directory, run:
