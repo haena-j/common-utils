@@ -32,7 +32,7 @@ This project includes several utility functions that can be useful for JavaScrip
 
 1. **getExtension(filename)** - Extract the extension from a file name.
 
-## Text Utility Functions
+### Text Utility Functions
 
 1. **toTitleCase(str)** - Converts a string to title case.
 2. **truncate(str, length)** - Truncates a string to a specific length and appends an ellipsis ('...') if the original string is longer.
