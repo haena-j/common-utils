@@ -52,4 +52,26 @@ describe('number utils', () => {
       expect(number.unCommaize('1,234,567')).toEqual('1234567');
     });
   });
+
+  describe('addDashesToPhoneNumber', () => {
+    it('should correctly format a phone number string', () => {
+      expect(number.addDashesToPhoneNumber('123456789')).toEqual('12-345-6789');
+      expect(number.addDashesToPhoneNumber('1234567890')).toEqual(
+        '123-456-7890'
+      );
+      expect(number.addDashesToPhoneNumber('01234567890')).toEqual(
+        '012-3456-7890'
+      );
+    });
+  });
+
+  describe('addZero', () => {
+    it('should correctly add a leading zero to a number less than 10', () => {
+      expect(number.addZero(1)).toEqual('01');
+    });
+
+    it('should correctly return a number greater than 10', () => {
+      expect(number.addZero(11)).toEqual('11');
+    });
+  });
 });

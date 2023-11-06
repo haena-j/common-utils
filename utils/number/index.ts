@@ -48,9 +48,53 @@ const unCommaize = (value: string): string => {
   return value.replace(/,/g, '');
 };
 
+/**
+ * Adds dashes to the given phone number string based on its length.
+ * ex. "01000000000" => "010-0000-0000"
+ */
+const addDashesToPhoneNumber = (input: string): string => {
+  const digitsOnly = input.replace(/[^0-9]/g, '');
+
+  if (digitsOnly.length < 9) {
+    return digitsOnly;
+  }
+
+  const applyFormat = (pattern: number[], number: string) => {
+    let startIdx = 0;
+    return pattern
+      .map((length) => {
+        const segment = number.slice(startIdx, startIdx + length);
+        startIdx += length;
+        return segment;
+      })
+      .join('-');
+  };
+
+  switch (digitsOnly.length) {
+    case 9:
+      return applyFormat([2, 3, 4], digitsOnly);
+    case 10:
+      return applyFormat([3, 3, 4], digitsOnly);
+    case 11:
+      return applyFormat([3, 4, 4], digitsOnly);
+    default:
+      throw new Error('Invalid phone number length');
+  }
+};
+
+/**
+ * Adds a leading zero to a number if it is less than 10.
+ * ex. 1 => "01"
+ */
+const addZero = (num: number | string): string => {
+  return String(num).padStart(2, '0');
+};
+
 export default {
   roundToDecimalPlace,
   extractNumber,
   commaize,
   unCommaize,
+  addDashesToPhoneNumber,
+  addZero,
 };
